@@ -1,8 +1,7 @@
-const car = {type:'Benz', model:'500', color:'white'};
+let x = 5;
+let y = 5;
+let z = 6;
+let a = (x < z);
 
-car.owner = 'John';
-car.color = 'red';
-
-delete car.color;
-
-console.log(car);
+b = typeof(a);
+console.log(b);
