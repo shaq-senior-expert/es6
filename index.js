@@ -1,11 +1,8 @@
-let cars = ['audi', 'volvo', 'benz'];
+const car = {type:'Benz', model:'500', color:'white'};
 
-cars = [4, 6, 9];
+car.owner = 'John';
+car.color = 'red';
 
-cars[0] = 'toyota';
+delete car.color;
 
-cars.push(5);
-
-cars.splice(2, 1);
-
-console.log(cars);  
+console.log(car);
