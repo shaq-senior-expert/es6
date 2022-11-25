@@ -1,71 +1,35 @@
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-const digits = new Array(40, 100, 1, 5, 25, 10);
+// let age = 35;
 
-fruits.pop();
-fruits.push("Tomato");
-digits.sort();
-digits.sort((a, b) => b - a);
-fruits.reverse();
+// let voteable = (age < 18) ? "Too young":"Old enough";
 
-console.log(digits);
+// console.log(voteable);
 
-fruits.forEach(myFunction);
+// const person = {fname:"John", lname:"Doe", age:25};
+// const person = ["apple", "peach", "remon"];
 
-function myFunction(value) {
-    console.log(value);
-}
-
-function myArrayMax(arr){
-    return Math.max.apply(null, arr);
-}
-
-function myArrayMin(arr){
-    return Math.min.apply(null, arr);
-}
-
-console.log(myArrayMin(digits));
-
-const cars = [
-    {type:"Volvo", year:2016},
-    {type:"Saab", year:2001},
-    {type:"BMW", year:2010}
-];
-
-cars.sort((a, b) => {return a.year - b.year});
-console.log(cars);
-
-// const numbers1 = [45, 4, 9, 16, 25];
-// const numbers2 = numbers1.map(myFunction);
-
-// function myFunction(value, index, array) {
-//   return value * 2;
+// let text = "";
+// for (let x of person) { 
+//   text += x;
 // }
 
-// const numbers1 = [45, 4, 9, 16, 25];
-// const numbers2 = numbers1.filter(myFunction);
+// console.log(text);
 
-// function myFunction(value) {
-//   return value > 10;
-// }
+const name = new Set(["John", "Mark", "Charlse"]);
+const fruits = new Map([
+    ["apples", 500],
+    ["bananas", 300],
+    ["oranges", 400]
+]);
 
-// const numbers1 = [45, 4, 9, 16, 25];
-// let sum = numbers1.reduce(myFunction);
-// let sum = numbers1.reduceRight(myFunction, 100);
-
-// function myFunction(total, value, index, array) {
-//   return total + value;
-// }
-
-const numbers1 = [5, 4, 9, 16, 25];
-let allOver18 = numbers1.find(myFunction);
-
-function myFunction(value) {
-  return value > 18;
+for(const x of fruits){
+    console.log(x[0]);
 }
 
-console.log(allOver18);
+console.log(name);
 
-
-
-
+let x = 12;
+if(x > 10)
+    throw "Greater than 10";
+else
+    throw "Lesser than 10";
 
