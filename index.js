@@ -1,35 +1,27 @@
-// let age = 35;
+<button onclick="this.style.display='none'">
+  Click to Remove Me!
+</button>
 
-// let voteable = (age < 18) ? "Too young":"Old enough";
-
-// console.log(voteable);
-
-// const person = {fname:"John", lname:"Doe", age:25};
-// const person = ["apple", "peach", "remon"];
-
-// let text = "";
-// for (let x of person) { 
-//   text += x;
-// }
-
-// console.log(text);
-
-const name = new Set(["John", "Mark", "Charlse"]);
-const fruits = new Map([
-    ["apples", 500],
-    ["bananas", 300],
-    ["oranges", 400]
-]);
-
-for(const x of fruits){
-    console.log(x[0]);
+const person = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
 }
+  
+const member = {
+    firstName:"Hege",
+    lastName: "Nilsen",
+}
+  
+let resultCall = person.fullName.call(member);
+let resultApply = person.fullName.apply(member);
+let resultBind = person.fullName.bind(member);
 
-console.log(name);
+console.log(resultCall);
+console.log(resultApply);
+console.log(resultBind());
 
-let x = 12;
-if(x > 10)
-    throw "Greater than 10";
-else
-    throw "Lesser than 10";
+
 
