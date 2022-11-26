@@ -1,27 +1,8 @@
-class Car {
+const car = {type:'Benz', model:'500', color:'white'};
 
-    constructor(name){
-        this.brand = name;
-    }
+car.owner = 'John';
+car.color = 'red';
 
-    present(){
-        return "I have a " + this.brand;
-    }
-}
+delete car.color;
 
-class Model extends Car{
-
-    constructor(name, mod){
-        super(name);
-        this.model = mod;
-    }
-
-    show(){
-        return this.present + ', it is a ' + this.model;
-    }
-}
-
-
-const mycar = new Model("Benz", "Mercedes");
-console.log(mycar.show());
-
+console.log(car);
