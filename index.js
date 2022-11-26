@@ -1,27 +1,11 @@
-class Car {
+let cars = ['audi', 'volvo', 'benz'];
 
-    constructor(name){
-        this.brand = name;
-    }
+cars = [4, 6, 9];
 
-    present(){
-        return "I have a " + this.brand;
-    }
-}
+cars[0] = 'toyota';
 
-class Model extends Car{
+cars.push(5);
 
-    constructor(name, mod){
-        super(name);
-        this.model = mod;
-    }
+cars.splice(2, 1);
 
-    show(){
-        return this.present + ', it is a ' + this.model;
-    }
-}
-
-
-const mycar = new Model("Benz", "Mercedes");
-console.log(mycar.show());
-
+console.log(cars);  
