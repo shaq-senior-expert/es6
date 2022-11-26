@@ -1,3 +1,4 @@
+
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 const digits = new Array(40, 100, 1, 5, 25, 10);
 
@@ -64,7 +65,6 @@ function myFunction(value) {
 }
 
 console.log(allOver18);
-
 
 
 
