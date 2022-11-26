@@ -1,11 +1,7 @@
-let cars = ['audi', 'volvo', 'benz'];
+let x = 5;
+let y = 5;
+let z = 6;
+let a = (x < z);
 
-cars = [4, 6, 9];
-
-cars[0] = 'toyota';
-
-cars.push(5);
-
-cars.splice(2, 1);
-
-console.log(cars);  
+b = typeof(a);
+console.log(b);
