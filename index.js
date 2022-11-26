@@ -9,6 +9,19 @@ class Car {
     }
 }
 
-const mycar = new Car("Benz");
-console.log(mycar.present());
+class Model extends Car{
+
+    constructor(name, mod){
+        super(name);
+        this.model = mod;
+    }
+
+    show(){
+        return this.present + ', it is a ' + this.model;
+    }
+}
+
+
+const mycar = new Model("Benz", "Mercedes");
+console.log(mycar.show());
 
