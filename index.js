@@ -35,37 +35,11 @@ const cars = [
 cars.sort((a, b) => {return a.year - b.year});
 console.log(cars);
 
-// const numbers1 = [45, 4, 9, 16, 25];
-// const numbers2 = numbers1.map(myFunction);
-
-// function myFunction(value, index, array) {
-//   return value * 2;
-// }
-
-// const numbers1 = [45, 4, 9, 16, 25];
-// const numbers2 = numbers1.filter(myFunction);
-
-// function myFunction(value) {
-//   return value > 10;
-// }
-
-// const numbers1 = [45, 4, 9, 16, 25];
-// let sum = numbers1.reduce(myFunction);
-// let sum = numbers1.reduceRight(myFunction, 100);
-
-// function myFunction(total, value, index, array) {
-//   return total + value;
-// }
-
-const numbers1 = [5, 4, 9, 16, 25];
-let allOver18 = numbers1.find(myFunction);
-
-function myFunction(value) {
-  return value > 18;
-}
-
-console.log(allOver18);
 
 
+const add = (function(){
+    let counter = 0;
+    return function(){counter += 1; return counter;}
+})();
 
-
+console.log(add());
