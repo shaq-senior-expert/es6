@@ -1,13 +1,18 @@
-hello = function(){
-    return "Hello world!";
-}
+// function add(){
+//     let counter = 0;
+//     function plus(){
+//         counter += 1;
+//     }
+//     plus();
+//     return counter;
+// }
 
-hello1 = () =>{
-    return "Hello world!";
-}
+// console.log(add());
 
-hello2 = () => "Hello world!";
-hello3 = (val) => 3 + val;
-hello4 = val => 3 + val;
 
-console.log(hello4(7));
+const add = (function(){
+    let counter = 0;
+    return function(){counter += 1; return counter;}
+})();
+
+console.log(add());
